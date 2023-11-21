@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>ChildGroww</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><img src="assets/logo.png"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#about_us">About Us</a></li>
+                            <div class="dropdown nav-link">
+                                <li class="nav-item">Resources</li>
+                                <div class="dropdown-content nav-item">
+                                  <a href="resume.html#ngo">NGO communitites</a>
+                                  <a href="resume.html#articles">Articles and Publications</a>
+                                  <a href="resume.html#opendata">Open data communitites</a>
+                                </div>
+                            </div>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html"><button class="btn btn-primary btn-lg mb-2 mb-lg-0 small fw-bolder" id="submitButton" >Sign Up</button></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <section class="py-5">
+                <div class="content container px-5">
+                    <!-- Contact form-->
+                    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+                        <div class="text-center mb-5">
+                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-people"></i></div>
+                            <h1 class="fw-bolder">Get in touch</h1>
+                            <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <!-- * * * * * * * * * * * * * * *-->
+                                <!-- * * SB Forms Contact Form * *-->
+                                <!-- * * * * * * * * * * * * * * *-->
+                                <!-- This form is pre-integrated with SB Forms.-->
+                                <!-- To make this form functional, sign up at-->
+                                <!-- https://startbootstrap.com/solution/contact-forms-->
+                                <!-- to get an API token!-->
+                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                    <!-- Name input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <label for="name">Full name</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                    </div>
+                                    <!-- Email address input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="email" type="email" placeholder="email@rvu.edu.in" data-sb-validations="required,email" />
+                                        <label for="email">Email address</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">An RVU-email is required.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                    </div>
+                                    <!-- Phone number input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                        <label for="phone">Phone number</label>
+                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="Course" type="text" placeholder="What are you pursuing?" data-sb-validations="required" />
+                                        <label for="Course">Course</label>
+                                        <div class="invalid-feedback" data-sb-feedback="Course:required">A Course is required.</div>
+                                    </div>
+
+                                    <!-- Message input-->
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="address" type="text" placeholder="Enter your address here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <label for="message">Address</label>
+                                        <div class="invalid-feedback" data-sb-feedback="address:required">Your address is required.</div>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="Region" type="text" placeholder="Enter your city" data-sb-validations="required" />
+                                        <label for="Region">City</label>
+                                    
+                                        <div class="invalid-feedback" data-sb-feedback="Region:required">A City is required.</div>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="PIN" type="number" placeholder="Enter Postal Code" data-sb-validations="required" />
+                                        <label for="PIN">PIN Code</label>
+                                        <div class="invalid-feedback" data-sb-feedback="PIN:required">A PIN no is required.</div>
+                                    </div>
+
+
+                                    <!-- Submit success message-->
+                                    <!---->
+                                    <!-- This is what your users will see when the form-->
+                                    <!-- has successfully submitted-->
+                                    <div class="d-none" id="submitSuccessMessage">
+                                        <div class="text-center mb-3">
+                                            <div class="fw-bolder">Form submission successful!</div>
+                                            <!-- To activate this form, sign up at -->
+                                            <br />
+                                            <!-- <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a> -->
+                                        </div>
+                                    </div>
+                                    <!-- Submit error message-->
+                                    <!---->
+                                    <!-- This is what your users will see when there is-->
+                                    <!-- an error submitting the form-->
+                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                    <!-- Submit Button-->
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                            <h6 class="section-title bg-white text-center text-primary px-3 lead fw-normal text-muted mb-0">Contact Us</h6>
+                            <h1 class="mb-5 fw-bolder">Contact For Any Query</h1>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <h5>Get In Touch</h5>
+                                <p class="mb-4">Contact the childgroww team in the below and join the community to make a difference 😊</p>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="text-primary">Office</h5>
+                                        <p class="mb-0">RV University, Mysuru Road</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="bi bi-phone"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="text-primary">Mobile</h5>
+                                        <p class="mb-0">+91 12345 67890</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="bi bi-envelope"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="text-primary">Email</h5>
+                                        <p class="mb-0">Childgroww.queries@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <iframe class="position-relative rounded w-100 h-100"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7572094028874!2d77.49713497463124!3d12.923320215935806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bafad1d6f18a4b9%3A0xc6082c1a24eba0bf!2sRV%20University!5e0!3m2!1sen!2sin!4v1698688579072!5m2!1sen!2sin"
+                                    frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
+                                    tabindex="0"></iframe>
+                            </div>
+                            <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                                <label for="name">Your Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                                <label for="email">Your Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                                <label for="subject">Subject</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                                <label for="message">Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; ChildGroww</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
